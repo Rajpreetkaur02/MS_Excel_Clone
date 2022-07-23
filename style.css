@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    font-size: 14;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+}
+.title-bar{
+    height: 5vh;
+    background-color: #107c41 ;
+    color: white;
+    display: flex;
+    /* by default - flex direction is row */
+    justify-content: center;
+    align-items: center;
+}
+.menu-bar{
+    height: 5vh;
+    background-color: #107c41;
+    color: white;
+    display: flex;
+}
+.menu-item{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18;
+    display: flex;
+    align-items: center;
+}
+.menu-item.selected{
+    background-color: #fff;
+    color: #107c41;
+}
+.menu-item:hover{
+    background-color: #0c5e31;
+    cursor: pointer;
+}
+.menu-item.selected:hover{
+    background-color: #fff;
+    cursor: default;
+}
+.menu-icons-bar{
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(241, 241, 241); 
+}
+.menu-icon{
+    padding-left: 10px;
+    padding-right: 10px; 
+    padding-top:5px;
+    height: 100%; 
+}
+.menu-icon:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+} 
+.selector{
+    height: 30px;
+    font-size: 18px;
+}
+.font-family-selector{
+    width: 150px;
+}
+.selector option{
+    font-size: 18px;
+}
+.formula-bar{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    background-color: rgb(241, 241, 241)
+}
+.formula-editor{
+    height: 70%;
+    border: 1px solid lightgrey;
+    background-color: white;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    align-items: center;
+}
+.selected-cell{
+    width: 120px;
+}
+.function-sign{
+    width: 30px;
+    margin:0 auto;
+}
+.formula-input{
+    width: calc(100vw - 160px);
+    outline-color: #107c41;
+}
+.cell-container{
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.select-all{
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgrey;
+}
+.column-name-container{
+    width: calc(100vw - 30px);
+    height: 30px;
+    border: 1px solid lightgrey;
+    display: flex;
+    overflow: hidden;
+}
+.column-name{
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid lightgrey;
+    font-weight: 'bold';
+}
+.row-name-container{
+    width: 30px;
+    border: 1px solid lightgrey;
+    height: calc(75vh - 30px);
+    overflow: hidden;
+    min-height: 25px;
+}
+.row-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    border-bottom: 1px solid lightgrey;
+}
+.input-cell-container{
+    width:calc(100vw - 30px);
+    height: calc(75vh - 30px);
+    border: 1px solid lightgrey;
+    overflow: scroll;
+ }
+ .cell-row{
+    display: flex;
+ }
+ .input-cell{
+    min-width: 100px;
+    min-height: 25px;
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+ }
+ .input-cell.selected{
+    border: 2px solid #107c41;
+ }
+.sheet-bar{
+    height: 4vh;
+    display: flex;
+}
+.icons-left-scroll,.icons-right-scroll{
+    font-size: 30px;
+}
+.icons-left-scroll:hover,.icons-right-scroll:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+.scroller{
+    width: 70px;
+}
+.icons-add{
+    width: 40px;
+    color: #107c41;
+}
+.icons-add:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.sheet-tab-container{
+    border: 2px solid lightgrey;
+    width: calc(100vw - 110px);
+    display: flex;
+}
+.sheet-tab{
+    border-right: 2px solid lightgrey;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 80px;
+    justify-content: center;
+    text-align: center;
+    font-weight:600;
+}
+.sheet-tab.selected{
+    border-bottom: 4px solid #107c41;
+}
+.sheet-tab:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+.sheet-tab.selected:hover{
+    cursor: default;
+    background-color: white;
+}
+.align-icon.selected{
+    background-color: lightgrey;
+}
+.style-icon.selected{
+    background-color: lightgrey;
+}
+
+.input-cell.top-cell-selected{
+    border-top: none;
+}
+
+.input-cell.bottom-cell-selected{
+    border-bottom: 1px solid lightgrey;
+}
+
+.input-cell.right-cell-selected{
+    border-right: 1px solid lightgrey;
+}
+
+.input-cell.left-cell-selected{
+    border-left: none;
+}
+.icon-color-fill{
+    position: relative;
+}
+.icon-color-text{
+    position: relative;
+}
+.color-picker{
+    position: absolute;
+    width: 28px;
+    height: 12px;
+    border: none;
+    padding: 0;
+    top: 25px;
+    left: 9px;
+    cursor: pointer;
+}
+
+
+
+
+
